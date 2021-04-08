@@ -1,47 +1,137 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-body{
-    background-color:rgb(218, 216, 212) ;
-}
-
-.page{
-    background-color: honeydew;
-    max-width: 1600px;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
+body {
+  background-color: rgb(245, 242, 237);
 }
 
-.navbar{
-  background-color: rgb(229, 235, 229);
+.page {
+  background-color: honeydew;
+  max-width: 1600px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar {
+  position: fixed;
+  background-color: rgb(255, 255, 255);
   height: 100%;
   width: 15%;
 }
 
-.navbar img{
-    height: 24%;
-    width: 24%;
-    margin: 30% 34%;
+.navbar img {
+  height: auto;
+  width: 28%;
+  margin: 30% 30%;
 }
 
 .navbar ul {
+  width: 100%;
+  font-weight: bolder;
+  font-size: 25px;
+  text-align: center;
+  list-style-type: none;
+}
+
+.navbar ul li {
+  color: bisque;
+  text-align: left;
+  display: block;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding: 20px 20px;
+  margin-left: 10%;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #985d46;
+}
+.navbar ul li a:hover{
+color: black;
+}
+
+
+
+.mySlides {
+  display: none;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 85%;
+  position: relative;
+  margin: auto;
+   display: inline-block;
+  padding-left: 15%;
+}
+.mySlides img {
+  max-height: 900px;
+}
+
+/* Caption text 
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
     width: 100%;
-    font-weight: bolder;
-    font-size: 25px;
     text-align: center;
-    list-style-type: none;
   }
 
-  .navbar ul li {
-          font-family:Georgia, 'Times New Roman', Times, serif;
+   Number text (1/3 etc) 
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+*/
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
 
-    display: inline-block;
-    padding: 20px 20px ;
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
   }
 
-  .navbar ul li a {
-    text-decoration: none;
-    color: #988c46;
+  to {
+    opacity: 1;
   }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size 
+  @media only screen and (max-width: 300px) {
+    .text {
+      font-size: 11px
+    }
+  }*/
