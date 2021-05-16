@@ -7,7 +7,7 @@ body {
 }
 
 .page {
-  background-color: honeydew;
+  background-color: white;
   max-width: 1600px;
   height: auto;
   margin-left: auto;
@@ -16,14 +16,14 @@ body {
 
 .navbar {
   position: fixed;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(151, 68, 68);
   height: 100%;
   width: 15%;
 }
 
 .navbar img {
   height: auto;
-  width: 28%;
+  width: 25%;
   margin: 30% 30%;
 }
 
@@ -60,11 +60,11 @@ color: black;
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 85%;
+  max-width: 89%;
   position: relative;
   margin: auto;
    display: inline-block;
-  padding-left: 15%;
+  padding-left: 18%;
 }
 .mySlides img {
   max-height: 900px;
@@ -135,3 +135,38 @@ color: black;
       font-size: 11px
     }
   }*/
+
+  
+
+/*
+ * ==== hexagon
+ */
+ .part{
+
+  display:inline-block;
+margin-left: 25%;
+ }
+
+.hexa, .hexa div {
+  overflow:hidden;
+
+}
+.hexa {
+  width: 375px;
+  height: 280px;
+  
+}
+.hexa div {
+  width: 100%;
+  height: 100%;
+
+}
+.hexa {
+  transform: rotate(120deg);
+}
+.hex1 {
+  transform: rotate(-60deg);
+}
+.hex2 {
+  transform: rotate(-60deg);
+}
